@@ -1,0 +1,126 @@
+/*careers.css*/
+@charset "utf-8";
+
+
+
+#contain{}
+
+/********** pageTit **********/
+.pageTit{width: 100%; height: 400px; background: url(../img/careers/bg.jpg); background-size: cover; background-position: 50% 50%;}
+.pageTit h4{font-size: 24px; font-weight: bold; text-align: center; color: #fff; padding-top: 230px; text-shadow: 4px 2px 10px rgb(0 0 0 / 80%)}
+
+
+/********** menuBar **********/
+.menuBar{width: 1200px; padding: 20px 10px 0 10px; margin: 0 auto;}
+.menuBar ul{display: flex; justify-content: end;}
+.menuBar ul li{background: url(../img/menu_bar.png) no-repeat right center;
+margin-right: 8px; padding-right: 10px;}
+.menuBar ul li:last-child{background: transparent; margin-right: 0px; padding-right: 0px;}
+.menuBar ul li a{font-size: 14px; color: #555; padding-right: 8px; }
+.menuBar ul li:last-child a{padding-right: 0;}
+
+
+/********** se2 **********/
+.se1{width: 1200px; padding: 100px 10px; margin: 0 auto;}
+.se1 h2{color: #555; font-size: 22px; font-weight: bold; background: url(../img/info/border_orange.png) no-repeat left bottom; padding-bottom: 20px;}
+
+.se1 .contList{display: flex; flex-wrap: wrap; margin-left: -10px; margin-right: -10px; padding-top: 40px;}
+.se1 .contList .box{width: calc(100% / 3 - 20px); margin: 0 10px;}
+.se1 .contList .box .img{width: 189px; height: 189px; margin: 40px auto;}
+.se1 .contList .box .txt{}
+.se1 .contList .box .txt span{display: block; font-family: 'Play', sans-serif; color: #555; text-align: center; margin-bottom: 10px;}
+.se1 .contList .box .txt h3{  font-size: 26px; color: #f47321; text-align: center;}
+.se1 .contList .box .txt strong{display: block; font-size: 16px; color: #555; margin-top: 40px;}
+.se1 .contList .box .txt p{color: #555; font-size: 14px; margin-top: 20px;}
+
+
+/********** se2 **********/
+.se2{width: 100%; background-image: url(../img/careers/bg2.jpg); background-size: cover; background-position: 50% 50%;}
+.se2 .wrap{width: 1200px; margin: 0 auto; padding: 100px 10px; display: flex; align-items: center;
+    justify-content: space-between;}
+
+.se2 .wrap .txt{width: 680px;}
+.se2 .wrap .txt h1{font-size: 24px; color: #fff; font-weight: normal; line-height: 1.6; background: url(../img/careers/border.png) no-repeat left bottom; padding-bottom: 20px;}
+.se2 .wrap .txt p{font-size: 14px; color: #fff; margin-top: 20px; line-height: 1.6;}
+
+.se2 .wrap .img{width: 400px; height: 315px; background-image: url(../img/careers/img.png);}
+
+
+/********** se3 **********/
+.se3{width: 1200px; padding: 120px 10px 80px 10px; margin: 0 auto;}
+.se3 h2{color: #555; font-size: 22px; font-weight: bold; background: url(../img/info/border_orange.png) no-repeat left bottom; padding-bottom: 20px; margin-bottom: 20px;}
+.se3 span{line-height: 1.6; color: #555; font-size: 18px; font-weight: bold;}
+.se3 p{font-size: 14px; color: #555; padding-top: 20px;}
+
+.se3 .Listcont{display: flex; flex-wrap: wrap; margin-left: -10px; margin-right: -10px; padding-top: 40px;}
+.se3 .Listcont .box{width: calc(100% / 3 - 20px); margin: 0 10px;}
+.se3 .Listcont .box .img{height: 195px; background-size: cover;}
+.se3 .Listcont .box .img .icon{text-align: center; padding-top: 20px;}
+.se3 .Listcont .box .img p{font-size: 20px; font-weight: bold; color: #fff; text-align: center; }
+
+.se3 .Listcont .slideTxt{}
+
+.se3 .Listcont .slideTxt .tit{padding: 20px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f47321;}
+.se3 .Listcont .slideTxt .tit h4{font-size: 14px; color: #555; line-height: 1;}
+.se3 .Listcont .slideTxt .tit .line{width: 16px; height: 16px; background-image: url(../img/careers/btn_on.png); cursor: pointer;}
+.se3 .Listcont .slideTxt .tit .line.active{background-image: url(../img/careers/btn_off.png);}
+
+.se3 .Listcont .cont{}
+.se3 .Listcont .cont ul{padding: 20px 0; line-height: 1.8; color: #555; background: #f4f4f4;}
+.se3 .Listcont .cont ul li{font-size: 14px; padding-left: 10px;}
+
+
+
+/******************** responsive.css ********************/
+@media (max-width: 1217px){
+    .menuBar{width: 90%;}
+    .se1{width: 90%;}
+    .se2 .wrap{width: 90%;}
+    .se3{width: 90%;}
+}
+
+@media (max-width: 1023px){
+
+    /*menuBar*/
+    .menuBar{width: 90%; padding: 20px 0 0 0;}
+
+    /*se1*/
+    .se1{width: 90%; padding: 80px 0;}
+
+    /*se2*/
+    .se2 .wrap{width: 90%; padding: 120px 0;}
+    .se2 .wrap .txt{width: 60%;}
+    .se2 .wrap .img{width: 265px; height: 215px; background-size: cover;}
+
+    /*se3*/
+    .se3{width: 90%; padding: 80px 0;}
+    .se3 span{font-size: 20px;}
+}
+
+
+@media (max-width: 767px){
+
+    /*pageTit*/
+    .pageTit{height: 300px;}
+    .pageTit h4{font-size: 18px; padding-top: 180px;}
+
+    /*menuBar*/
+    .menuBar{display: none;}
+
+    /*se1*/
+    .se1 h2{font-size: 20px;}
+    .se1 .contList .box{width: 100%;}
+    .se1 .contList .box .img{width: 140px; height: 140px; background-size: cover;}
+
+    /*se2*/
+    .se2 .wrap{flex-direction: column; padding: 80px 0;}
+    .se2 .wrap .txt{width: 100%; padding-bottom: 60px;}
+    .se2 .wrap .img{}
+
+    /*se3*/
+    .se3{padding: 80px 0 40px 0;}
+    .se3 h2{font-size: 20px;}
+    .se3 .Listcont .box{width: 100%; margin: 0; margin-bottom: 40px;}
+    .se3 .Listcont{margin: 0;}
+    
+}

@@ -1,0 +1,123 @@
+/*business.css*/
+@charset "utf-8";
+
+
+
+#contain{}
+
+/********** pageTit **********/
+.pageTit{width: 100%; height: 530px; background:url("../img/business/bg.jpg") no-repeat top center; position: relative;}
+.pageTit .pointTit{width: 1180px; background: #f47321; position: absolute; top: 330px; left: 50%; transform: translateX(-50%); text-align: center; padding: 40px 0; color: #fff;}
+.pageTit .pointTit img{}
+.pageTit .pointTit h3{font-size: 26px; padding: 10px 0; font-weight: normal;}
+.pageTit .pointTit h3 span{font-size: 30px; font-family: 'Play', sans-serif; background: url(../img/business/title_border.png) no-repeat left center; padding-left: 10px; margin-left: 10px;}
+.pageTit .pointTit p{font-size: 14px;}
+
+
+/********** menuBar **********/
+.menuBar{width: 1200px; padding: 20px 10px 0 10px; margin: 0 auto;}
+.menuBar ul{display: flex; justify-content: end;}
+.menuBar ul li{background: url(../img/menu_bar.png) no-repeat right center;
+margin-right: 8px; padding-right: 10px;}
+.menuBar ul li:last-child{background: transparent; margin-right: 0px; padding-right: 0px;}
+.menuBar ul li a{font-size: 14px; color: #555; padding-right: 8px; }
+.menuBar ul li:last-child a{padding-right: 0;}
+
+
+/********** txt **********/
+.contTxt{width: 780px; margin: 0 auto; font-size: 14px; text-align: center; letter-spacing: -1px; line-height: 1.8; padding: 100px 0;}
+
+
+/********** business **********/
+.business{width: 1200px; padding: 0 10px; margin: 0 auto;}
+.business h2{color: #555; font-size: 22px; font-weight: bold; background: url(../img/info/border_orange.png) no-repeat left bottom; padding-bottom: 20px;}
+
+.business .banner{width: 100%; margin-top: 40px;}
+.business .banner > ul{}
+.business .banner > ul > li{width: 100%; position: relative;}
+.business .banner > ul > li > .img{width: 100%; height: 480px; background: #faf; background-size: cover; background-position: 50% 50%;}
+
+.business .banner > ul > li > .txt{display: flex; align-items: center; padding: 26px 0; border-bottom: 1px solid #f47321;}
+.business .banner > ul > li > .txt h3{font-size: 22px; color: #555; margin-right: 20px;}
+.business .banner > ul > li > .txt > ul{display: flex; justify-content: center; flex-wrap: wrap;}
+.business .banner > ul > li > .txt > ul > li{margin-right: 20px; font-size: 14px; color: #555;}
+.business .banner > ul > li > .txt > ul > li > span{font-weight: bold; margin-right: 5px;}
+
+.business .banner > ul > li > .txt > a{display: block; color: #fff;
+    line-height: 40px; width: 160px; height: 40px; background: #f47321; text-align: center; float: right; position: absolute; right: 0;} 
+
+.swiper-button-prev, .swiper-button-next{width: 64px; height: 64px;  margin-top: -64px}
+.swiper-button-prev:after, .swiper-button-next:after{content: none;}
+.swiper-button-prev{left: 0; background: url(../img/business/slide_prev.png) no-repeat; background-size: cover;}
+.swiper-button-next{right: 0; background: url(../img/business/slide_next.png) no-repeat; background-size: cover;}
+
+
+/********** business **********/
+.contList{width: 1200px; padding: 60px 0px; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.contList .box{height: 298px; width: calc(100% / 3 - 20px); margin: 0 10px 20px; border: 1px solid #d9d9d9; border-radius: 20px; padding: 0 10px; text-align: center; position: relative; background-size: cover; background-position: 50% 50%;}
+.contList .box h3{font-size: 22px; font-weight: bold; color: #f47321; padding: 20px 0;}
+.contList .box h3 span{font-size: 30px; font-weight: 500; position: absolute; left: 20px; line-height: 1;}
+.contList .box p{font-size: 14px; color: #555; line-height: 1.6; letter-spacing: -1px; border-top: 1px solid #d9d9d9; padding-top: 20px;}
+
+
+
+
+
+/******************** responsive.css ********************/
+@media (max-width: 1217px){
+    .menuBar{width: 90%;}
+    .pageTit .pointTit{width: 90%;}
+    .business{width: 90%;}
+    .contList{width: 90%;}
+}
+
+@media (max-width: 1023px){
+
+    /*pageTit*/
+    .pageTit .pointTit{width: 90%; height: 200px;}
+
+    /*menuBar*/
+    .menuBar{width: 90%; padding: 20px 0 0 0;}
+
+    /*contTxt*/
+    .contTxt{width: 90%;}
+
+    /*business*/
+    .business{width: 90%; padding: 0 0;}
+
+    /*contList*/
+    .contList{width: 90%;}
+    .contList .box{width: calc(100% / 2 - 20px);}
+    
+    
+}
+
+
+@media (max-width: 767px){
+
+    /*pageTit*/
+    .pageTit{height: 300px;}
+    .pageTit .pointTit{height: 160px; padding: 30px 0; top: 180px;}
+    .pageTit .pointTit img{width: 55px; height: 36px;}
+    .pageTit .pointTit h3{font-size: 20px; padding: 5px 0;}    
+    .pageTit .pointTit h3 span{font-size: 24px;}    
+    .pageTit .pointTit p{font-size: 13px;}
+    
+    /*menuBar*/
+    .menuBar{display: none;}
+
+    /*contTxt*/
+    .contTxt{padding: 60px 0; margin-top: 30px;}
+
+    /*business*/
+    .business h2{font-size: 20px;}
+    .business .banner > ul > li > .img{height: 260px;}
+    .business .banner > ul > li > .txt{flex-direction: column;}
+    .business .banner > ul > li > .txt h3{padding-bottom: 6px; margin-right: 0;}
+    .business .banner > ul > li > .txt > a{width: 140px; position: static; margin-top: 20px;}
+    .swiper-button-prev, .swiper-button-next{width: 44px; height: 44px; margin-top: -100px;}
+
+    /*contList*/
+    .contList .box{width: 100%;}
+    
+}

@@ -1,0 +1,95 @@
+/*info.css*/
+@charset "utf-8";
+
+
+
+#contain{}
+
+/********** pageTit **********/
+.pageTit{width: 100%; height: 400px; background: url(../img/info/bg.jpg); background-size: cover; background-position: 50% 50%;}
+.pageTit h4{font-size: 24px; font-weight: bold; text-align: center; color: #fff; padding-top: 230px; text-shadow: 4px 2px 10px rgb(0 0 0 / 80%)}
+
+
+/********** menuBar **********/
+.menuBar{width: 1200px; padding: 20px 10px 0 10px; margin: 0 auto;}
+.menuBar ul{display: flex; justify-content: end;}
+.menuBar ul li{background: url(../img/menu_bar.png) no-repeat right center;
+margin-right: 8px; padding-right: 10px;}
+.menuBar ul li:last-child{background: transparent; margin-right: 0px; padding-right: 0px;}
+.menuBar ul li a{font-size: 14px; color: #555; padding-right: 8px; }
+.menuBar ul li:last-child a{padding-right: 0;}
+
+
+/********** vision **********/
+.vision{width: 1200px; padding: 100px 10px; margin: 0 auto;}
+.vision .tit{margin-bottom: 80px;}
+.vision .tit strong{font-size: 20px; color: #555; font-family: 'Play', sans-serif; text-align: center; display: block;}
+.vision .tit h2{font-size: 60px; font-family: 'Play', sans-serif; color: #f47321; text-align: center; margin-bottom: 80px; font-weight: 400;}
+
+.vision .cont{line-height: 1.6;}
+.vision .cont span{color: #000; font-weight: bold; font-size: 16px; margin-bottom: 20px; display: block;}
+
+.vision .cont p{color: #555; font-size: 14px; padding-bottom: 20px;}
+
+
+/********** management **********/
+.management{width: 1200px; padding:0 10px; margin: 0 auto;}
+.management h2{color: #555; font-size: 22px; font-weight: bold; background: url(../img/info/border_orange.png) no-repeat left bottom; padding-bottom: 20px;}
+
+.management ul{height: 408px; background: url("../img/info/img.png") no-repeat center center; display: flex; justify-content: space-around; align-items: center; text-align: center; color: #555; padding: 0 10px; margin: 80px 0; background-size: cover;}
+.management ul li{width: calc(100% / 3 - 100px);}
+.management ul li h4{font-size: 30px; }
+.management ul li span{font-size: 16px; font-weight: 500;}
+.management ul li p{font-size: 14px; color: #888; padding-top: 10px;}
+
+
+
+/******************** responsive.css ********************/
+@media (max-width: 1217px){
+    .menuBar{width: 90%;}
+    .vision{width: 90%;}
+    .management{width: 90%;}
+    .management ul{height: 320px;
+}
+
+@media (max-width: 1023px){
+
+    /*menuBar*/
+    .menuBar{width: 90%; padding: 20px 0 0 0;}
+
+    /*vision*/
+    .vision{width: 90%; padding: 100px 0;}
+
+    /*.management*/
+    .management{width: 90%; padding: 0; height: 500px;}
+    .management ul{height: 240px; margin: 40px 0; background:none;}
+    .management ul li{width: 100%; height: 100%; position: relative;}
+    .management ul li:nth-child(1){background: url(../img/info/img01.png) no-repeat left center; background-size: 100%;  left: 15px;}
+    .management ul li:nth-child(2){background: url(../img/info/img02.png) no-repeat left center; background-size: 100%;  z-index: 99;}
+    .management ul li:nth-child(3){background: url(../img/info/img03.png) no-repeat left center; background-size: 100%; margin-right: 0; right: 15px;}
+    .management ul li h4{font-size: 24px; padding-top: 90px;} 
+    .management ul li span{font-size: 13px;}
+    .management ul li p{padding-top: 120px; width: 90%; margin: 0 auto;}
+    
+}
+
+
+@media (max-width: 767px){
+    /*pageTit*/
+    .pageTit{height: 300px;}
+    .pageTit h4{font-size: 18px; padding-top: 180px;}
+
+    /*menuBar*/
+    .menuBar{display: none;}
+
+    /*.management*/
+    .management{height: auto;}
+    .management h2{font-size: 20px;}
+    .management ul{height: auto; flex-direction: column; margin: 50px 0;}
+    .management ul li{height: 320px; padding: 22px 0;}
+    .management ul li:nth-child(1){left: 0;}
+    .management ul li:nth-child(2){}
+    .management ul li:nth-child(3){right: 0;}
+    .management ul li p{width: 70%; padding-top: 20px;}
+    
+}
